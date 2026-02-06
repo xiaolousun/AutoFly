@@ -205,6 +205,8 @@ body {
   margin-right: 0.3rem;
   margin-bottom: 0.3rem;
   line-height: 1.8;
+  color: #2563eb;
+  font-weight: 600;
 }
 
 .eql-cntrb {
