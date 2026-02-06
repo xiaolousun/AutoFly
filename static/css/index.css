@@ -202,7 +202,15 @@ body {
 
 .author-block {
   display: inline-block;
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.8;
+}
+
+.eql-cntrb {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
 }
 
 .publication-banner img {
