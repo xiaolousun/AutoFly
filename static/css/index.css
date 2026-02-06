@@ -209,6 +209,11 @@ body {
   font-weight: 600;
 }
 
+.institution-block {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
 .eql-cntrb {
   display: inline-block;
   margin-top: 0.5rem;
