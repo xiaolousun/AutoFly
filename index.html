@@ -375,11 +375,11 @@ Experimental results demonstrate that AutoFly achieves a 3.9% higher success rat
     <div class="container">
       <!-- Paper video. -->
       <h2 class="title is-3 has-text-centered">Video Presentation</h2>
-      <p style="margin-bottom: 1.5rem; font-size: 1.0rem; font-weight: 450; color: #4a4a4a; line-height: 1.7; text-align: left;">
-        We have constructed a complete VLA model-based pipeline for UAV autonomous navigation, which encompasses the entire workflow of dataset collection, supervised fine-tuning of the VLA model, model acceleration, and physical UAV deployment, and have conducted flight tests across a variety of simulated and real-world scenarios.
-      </p>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
+          <p style="margin-bottom: 1.5rem; font-size: 1.0rem; font-weight: 450; color: #4a4a4a; line-height: 1.7; text-align: left;">
+            We have constructed a complete VLA model-based pipeline for UAV autonomous navigation, which encompasses the entire workflow of dataset collection, supervised fine-tuning of the VLA model, model acceleration, and physical UAV deployment, and have conducted flight tests across a variety of simulated and real-world scenarios.
+          </p>
           <div class="publication-video">
             <!-- TODO: Replace with your YouTube video ID -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -431,6 +431,30 @@ Experimental results demonstrate that AutoFly achieves a 3.9% higher success rat
           <p style="font-size: 1.0rem; font-weight: 450; color: #4a4a4a; line-height: 1.7;">
             Framework of AutoFly. AutoFly takes RGB observations and linguistic instructions as inputs and directly outputs high-level actions. These actions, 
             combined with initial actions derived from coarse-grained positional or directional information, form action sequences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End dataset image -->
+
+
+<!-- dataset image -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <!-- TODO: Replace with your dataset image title -->
+        <!-- <h2 class="title is-3">Autonomous Navigation Dataset</h2> -->
+        <h2 class="title is-3" style="text-align: left;">Model Acceleration and Deployment</h2>
+        <!-- TODO: Replace with your dataset image -->
+        <img src="static/images/deploy.jpg" alt="Research result visualization" loading="lazy" style="width: 100%; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.10);">
+        <!-- TODO: Replace with your image description -->
+        <div class="content has-text-justified" style="margin-top: 1.2rem;">
+          <p style="font-size: 1.0rem; font-weight: 450; color: #4a4a4a; line-height: 1.7;">
+            Our model is implemented on a remote server and communicates with the robot via a local area network (LAN).
+            Our system employs a multi-process parallel inference methodology.
           </p>
         </div>
       </div>
