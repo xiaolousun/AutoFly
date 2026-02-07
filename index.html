@@ -335,7 +335,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
       <!-- TODO: Replace with your teaser image (e.g. paper figure / pipeline overview) -->
-      <img src="static/images/intro.png" alt="AutoFly Teaser Figure" style="width: 100%; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.10);">
+      <img src="static/images/intro.jpg" alt="AutoFly Teaser Figure" style="width: 100%; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.10);">
       <!-- TODO: Replace with your image description -->
       <p style="margin-top: 1.2rem; font-size: 1.0rem; font-weight: 450; color: #4a4a4a; line-height: 1.7; text-align: left;">
         Analysis of previous methods and our AutoFly: <em>Left</em>: Previous methods rely on dedicated, step-by-step instructions that specify predetermined flight paths with explicit waypoints and maneuvers. <em>Right</em>: Our AutoFly performs autonomous navigation with concise natural language instructions, and coarse positional or directional information.
@@ -394,26 +394,50 @@ Experimental results demonstrate that AutoFly achieves a 3.9% higher success rat
 <!-- End youtube video -->
 
 
-<!-- Result image -->
+<!-- dataset image -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <!-- TODO: Replace with your result image title -->
+        <!-- TODO: Replace with your dataset image title -->
         <h2 class="title is-3">Autonomous Navigation Dataset</h2>
-        <!-- TODO: Replace with your result image -->
+        <!-- TODO: Replace with your dataset image -->
         <img src="static/images/dataset.jpg" alt="Research result visualization" loading="lazy" style="width: 100%; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.10);">
         <!-- TODO: Replace with your image description -->
         <div class="content has-text-justified" style="margin-top: 1.2rem;">
           <p style="font-size: 1.0rem; font-weight: 450; color: #4a4a4a; line-height: 1.7;">
-            We construct 12 diverse simulated environments using AirSim for training and evaluation, totaling over 13K episodes and 2.5M image-language-action triplets. For object recognition tasks, we strategically position 60 carefully selected object instances at environment boundaries, with each scenario containing 3-5 distractor objects to challenge the model's recognition and reasoning capabilities.
+            We construct 12 diverse simulated environments using AirSim for training and evaluation, totaling over 13K episodes and 2.5M image-language-action triplets. For object recognition tasks, we strategically position 60 carefully selected object instances at environment boundaries, 
+            with each scenario containing 3-5 distractor objects to challenge the model's recognition and reasoning capabilities.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End result image -->
+<!-- End dataset image -->
+
+
+<!-- dataset image -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <!-- TODO: Replace with your dataset image title -->
+        <h2 class="title is-3">VLA Model for Autonomous Navigation</h2>
+        <!-- TODO: Replace with your dataset image -->
+        <img src="static/images/method.jpg" alt="Research result visualization" loading="lazy" style="width: 100%; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.10);">
+        <!-- TODO: Replace with your image description -->
+        <div class="content has-text-justified" style="margin-top: 1.2rem;">
+          <p style="font-size: 1.0rem; font-weight: 450; color: #4a4a4a; line-height: 1.7;">
+            Framework of AutoFly. AutoFly takes RGB observations and linguistic instructions as inputs and directly outputs high-level actions. These actions, 
+            combined with initial actions derived from coarse-grained positional or directional information, form action sequences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End dataset image -->
 
 
 
