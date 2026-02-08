@@ -291,7 +291,7 @@
 
                     <!-- TODO: Add your supplementary material PDF or remove this section -->
                     <span class="link-block">
-                      <a href="https://huggingface.co/datasets/xiaolousun/AutoFly" target="_blank"
+                      <a href="https://huggingface.co/datasets/xlsun/AutoFly" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-database"></i>
@@ -369,27 +369,58 @@ Experimental results demonstrate that AutoFly achieves a 3.9% higher success rat
 <!-- End paper abstract -->
 
 
-<!-- Youtube video -->
+<!-- Video Presentation -->
 <section class="hero is-small is-small">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3 has-text-centered">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <p style="margin-bottom: 1.5rem; font-size: 1.0rem; font-weight: 450; color: #4a4a4a; line-height: 1.7; text-align: left;">
             We have constructed a complete VLA model-based pipeline for UAV autonomous navigation, which encompasses the entire workflow of dataset collection, supervised fine-tuning of the VLA model, model acceleration, and physical UAV deployment, and have conducted flight tests across a variety of simulated and real-world scenarios.
           </p>
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
+          <!-- Tab switches -->
+          <div style="margin-bottom: 1rem; display: flex; justify-content: center; gap: 0.5rem;">
+            <button class="button is-dark is-rounded video-tab-btn is-active" onclick="switchVideoTab('youtube', this)" style="font-size: 0.9rem;">
+              <span class="icon"><i class="fab fa-youtube"></i></span><span>YouTube</span>
+            </button>
+            <button class="button is-dark is-rounded video-tab-btn" onclick="switchVideoTab('bilibili', this)" style="font-size: 0.9rem;">
+              <span class="icon"><i class="fas fa-play-circle"></i></span><span>Bilibili</span>
+            </button>
+          </div>
+          <!-- YouTube video -->
+          <div id="video-youtube" class="publication-video">
             <iframe src="https://www.youtube.com/embed/idnWWjpxxcQ?si=BtQ_Gd3zyuzA0UFW" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <!-- Bilibili video -->
+          <div id="video-bilibili" class="publication-video" style="display: none;">
+            <!-- TODO: Replace with your Bilibili embed link -->
+            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116034547877914&bvid=BV1jccFz2Ep2&cid=35911502512&p=1" frameborder="0" allow="autoplay" allowfullscreen scrolling="no"></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<script>
+function switchVideoTab(tab, btn) {
+  document.getElementById('video-youtube').style.display = tab === 'youtube' ? '' : 'none';
+  document.getElementById('video-bilibili').style.display = tab === 'bilibili' ? '' : 'none';
+  document.querySelectorAll('.video-tab-btn').forEach(function(b) {
+    b.classList.remove('is-active');
+    b.style.opacity = '0.6';
+  });
+  btn.classList.add('is-active');
+  btn.style.opacity = '1';
+}
+// Init: set inactive buttons to lower opacity
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.video-tab-btn').forEach(function(b) {
+    if (!b.classList.contains('is-active')) b.style.opacity = '0.6';
+  });
+});
+</script>
+<!-- End video presentation -->
 
 
 <!-- dataset image -->
