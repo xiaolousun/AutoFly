@@ -179,21 +179,12 @@ body {
    font-weight: 600;
    transition: var(--transition);
    position: relative;
+   border-bottom: 1.5px solid var(--primary-color);
+   padding-bottom: 1px;
 }
 
-.publication-authors a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background: var(--gradient-accent);
-    transition: var(--transition);
-}
-
-.publication-authors a:hover::after {
-    width: 100%;
+.publication-authors a:hover {
+    border-bottom-color: var(--primary-hover);
 }
 
 .publication-authors a:hover {
