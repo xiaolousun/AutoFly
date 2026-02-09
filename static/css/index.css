@@ -179,17 +179,13 @@ body {
    font-weight: 600;
    transition: var(--transition);
    position: relative;
-   border-bottom: 1.5px solid var(--primary-color);
-   /* border-bottom: 2px solid #1d4ed8;  */
+   border-bottom: 2px solid transparent;
    padding-bottom: 1px;
 }
 
 .publication-authors a:hover {
-    border-bottom-color: var(--primary-hover);
-}
-
-.publication-authors a:hover {
     color: var(--primary-hover) !important;
+    border-bottom-color: #1d4ed8;
 }
 
 .author-block {
